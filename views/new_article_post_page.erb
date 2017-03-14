@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic HTML Page</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <h1>Post A New Article</h1>
+  <h2>
+  <form action='/articles/new' method="post">
+    <label for="article">Title:</label>
+    <input type="text" id="article_title" name="article_title">
+
+    <label for="article">URL:</label>
+    <input type="text" id="article_URL" name="article_URL">
+
+    <label for="article">Description:</label>
+    <input type="text" id="article_description" name="article_descriptions">
+
+    <input type="submit">
+    <a href="/articles">Article List</a>
+
+  </form>
+
+</h2>
+</h1>
+</body>

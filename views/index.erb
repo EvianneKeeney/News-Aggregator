@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+
+  <body>
+    <h1>Article Reference Queue</h1>
+    <h2>Title: <p1>  <ul>
+        <% @article.each do |article| %>
+          <li><%= article[0] %></li>
+        <% end %>
+      </ul>
+    </p1></h2>
+
+    <h2>URL: <p1>  <ul>
+        <% @article.each do |article| %>
+          <li><a href= "<%=article[1] %>" target="_blank"><%= article[1] %></a></li>
+        <% end %>
+      </ul>
+    </p1></h2>
+
+    <h2>Description:<p1>  <ul>
+        <% @article.each do |article| %>
+            <li><%= article[2] %></li>
+        <% end %>
+      </ul>
+    </p1>
+    </h2>
+
+    <a href="/articles/new">Post articles</a>
+  </body>
+</html>
